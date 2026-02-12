@@ -20,3 +20,5 @@ A React application that fetches and displays Digimon information using GraphQL 
 ## API
 
 This project uses the Digimon GraphQL API: `https://digimon-graphql.vercel.app/`
+
+<img width="772" height="775" alt="digimons" src="https://github.com/user-attachments/assets/7201b542-aca7-4da7-a00f-b62e4ce12762" />
