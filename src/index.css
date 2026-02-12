@@ -1,0 +1,175 @@
+:root {
+  background-color: #242424;
+}
+/* RESETS
+=========================================== */
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 20px 0;
+  padding: 0 20px;
+  line-height: 1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #202020;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* digimon APPLICATION
+=========================================== */
+.container {
+  display: flex;
+  max-width: 750px;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container p {
+  margin: 0;
+}
+
+.container .digimon {
+  width: 49%;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.container .digimon__name {
+  background-color: #ecd018;
+  text-align: center;
+  padding: 10px;
+}
+
+.container .digimon__name p {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 4px;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.container .digimon__evolutions {
+  padding: 0 10px;
+}
+
+.container .digimon__evolutions .evolution-list {
+    display: flex;
+    gap: 8px;
+}
+
+.container .digimon__evolutions .evolution-list .evolution-item {
+  max-width: 110px;
+  width: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.container .digimon__evolutions .evolution-list .evolution-item img {
+  width: 70px;
+  height: 70px;
+}
+
+.container .digimon__evolutions .evolution-list .evolution-item span {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.container .digimon__description {
+  padding: 0 10px;
+}
+
+.container .digimon__image {
+  padding: 20px;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .digimon__image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container .digimon__attacks {
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: space-between;
+}
+
+.container .digimon__attacks span {
+  width: 30%;
+  background-color: #f16820;
+  border-radius: 3px;
+  padding: 7px;
+  font-weight: 700;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 12px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  text-align: center;
+  line-height: 15px;
+}
+
+.container .digimon__meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+.container .digimon__meta span {
+  color: white;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+  background-color: #7bb7b7;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .container .digimon {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .container .digimon__attacks, .container .digimon__meta {
+    flex-wrap: wrap;
+  }
+
+  .container .digimon__meta span,
+  .container .digimon__attacks span,
+  .container .digimon {
+    width: 100%;
+  }
+
+  .container .digimon__meta span {
+    margin-bottom: 10px;
+  }
+}
